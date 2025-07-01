@@ -1,0 +1,1 @@
+web: gunicorn pycancer.wsgi
