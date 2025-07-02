@@ -127,3 +127,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ALLOWED_HOSTS = ['localhost','gpycancer-production.up.railway.app', '127.0.0.1'] # LA DIRECCION DE NUESTRA APP
 
 STATIC_ROOT= os.path.join(BASE_DIR, 'staticfiles')
+
+CSRF_TRUSTED_ORIGINS= ['http://*','https://gpycancer-production.up.railway.app']
