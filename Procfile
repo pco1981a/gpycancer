@@ -1,1 +1,1 @@
-web: gunicorn pycancer.wsgi
+web: python manage.py collectstatic && gunicorn pycancer.wsgi
