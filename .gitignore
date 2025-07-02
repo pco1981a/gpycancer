@@ -1,4 +1,5 @@
 venv
 __pycache__
-db.sqlite3 # Al desplegar en CLOUD se usa BD en CLOUD no local para subirlo.
+db.sqlite3 # Al desplegar en CLOUD se usa BD en CLOUD, no local.
 staticfiles
+.env
