@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-08e4u8wsz+7(9i^_ll=3b4b495)w^fq(m3jwi858k(qqgy=+l3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -129,6 +129,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STORAGES = {
+    # ...
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 ALLOWED_HOSTS = ['localhost','gpycancer-production.up.railway.app', '127.0.0.1'] # LA DIRECCION DE NUESTRA APP
 
